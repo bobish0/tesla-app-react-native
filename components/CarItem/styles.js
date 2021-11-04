@@ -69,6 +69,8 @@ const styles = StyleSheet.create({
     controlsButton:{
         borderWidth:1,
         borderColor:"white",
+        backgroundColor:"black",
+        opacity:0.8,
         borderRadius:50,
         padding:18,
         marginLeft:12,
