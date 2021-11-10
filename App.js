@@ -1,24 +1,36 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import CarItem from './components/CarItem/index.js';
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function App() {
+
+
+
+function HomeScreen() {
   return (
-    <View style={styles.container}>
-      
-      <CarItem />
-     
-      <StatusBar style="auto" />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+export default function App() {
+  return (
+    <NavigationContainer> 
+
+    <View>
+    
+      <CarItem />
+     
+      <StatusBar style="auto" />
+      
+    </View>
+
+    </NavigationContainer>
+    
+  );
+}
